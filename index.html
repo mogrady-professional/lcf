@@ -1,69 +1,539 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8" />
     <title>Loreta's Canyon Farmhouse</title>
     <meta
       name="description"
-      content="Loreta's Canyon Farmhouse is a charming and rustic retreat nestled in the heart of a picturesque canyon. This cozy farmhouse offers a perfect blend of comfort and natural beauty, making it an ideal getaway for nature lovers and those seeking tranquility. With its warm and inviting atmosphere, Loreta's Canyon Farmhouse provides a serene escape from the hustle and bustle of everyday life, allowing guests to unwind and reconnect with nature."
+      content="Loreta's Canyon Farmhouse is a charming and rustic retreat nestled in the heart of nature. This cozy farmhouse offers a perfect blend of comfort and tranquility, making it an ideal getaway for those seeking a peaceful escape from the hustle and bustle of city life. With its picturesque surroundings, warm ambiance, and inviting atmosphere, Loreta's Canyon Farmhouse promises a memorable experience for all who visit. Whether you're looking to unwind, explore the great outdoors, or simply enjoy the beauty of nature, this farmhouse is the perfect destination for your next adventure."
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <meta name="author" content="Loreta's Canyon Farmhouse" />
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
   </head>
-  <!-- First Deployment Today -->
-  <body>
-    <br />
-    <div class="container">
-      <div id="main">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <strong>Using Hashes</strong>
-                <p>
-                  Using hashes may not be the best route for SEO and it may also
-                  be unusual for some users which may make them not use the
-                  website.
-                  <br />
-                  <small>Use cases: Apps, Landing Pages</small>
-                </p>
-                <div>
-                  <a href="/">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#contact">Contact</a>
+
+  <body id="top">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <!-- <img src="images/slides/slide-03.jpg" alt="Homepage" /> -->
+        </a>
+      </div>
+
+      <!-- <div class="header-email">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"
+          />
+        </svg>
+        <a href="mailto:#0">hello@x.com</a>
+      </div> -->
+    </header>
+    <!-- end s-header -->
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro s-intro--slides">
+      <div class="intro-slider">
+        <div
+          class="intro-slider-img bg-opacity-40"
+          style="background-image: url(images/slides/slide-01.jpg)"
+        ></div>
+        <div
+          class="intro-slider-img"
+          style="background-image: url(images/slides/slide-02.jpg)"
+        ></div>
+        <div
+          class="intro-slider-img"
+          style="background-image: url(images/slides/slide-03.jpg)"
+        ></div>
+      </div>
+
+      <div class="grid-overlay">
+        <div></div>
+      </div>
+
+      <div class="row intro-content">
+        <div class="column">
+          <div class="intro-content__text">
+            <h3>Coming Soon</h3>
+            <h1>Loreta's Canyon Farmhouse</h1>
+          </div>
+          <!-- end intro-content__text -->
+
+          <div class="intro-content__bottom">
+            <div class="intro-content__counter-wrap">
+              <h4>Launching in</h4>
+
+              <div class="counter">
+                <div class="counter__time days">
+                  365
+                  <span>D</span>
+                </div>
+                <div class="counter__time hours">
+                  09
+                  <span>H</span>
+                </div>
+                <div class="counter__time minutes">
+                  54
+                  <span>M</span>
+                </div>
+                <div class="counter__time seconds">
+                  57
+                  <span>S</span>
+                </div>
+              </div>
+              <!-- end counter -->
+            </div>
+            <!-- end intro-content__counter-wrap -->
+
+            <!-- <div class="intro-content__notify">
+              <button
+                type="button"
+                class="btn--stroke btn--small modal-trigger"
+              >
+                Notify Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M24 12l-9-9v7h-15v4h15v7z" />
+                </svg>
+              </button>
+            </div> -->
+            <!-- end intro-content__notify -->
+          </div>
+          <!-- end intro-content__bottom -->
+        </div>
+        <!-- end column -->
+      </div>
+      <!--  end intro-content -->
+
+      <div class="modal">
+        <div class="modal__inner">
+          <span class="modal__close"></span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+            />
+          </svg>
+
+          <h3>Sign Up</h3>
+          <p>
+            Be the first to know about the latest updates and get exclusive
+            offer on our grand opening.
+          </p>
+
+          <form id="mc-form" class="group mc-form" novalidate="true">
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="email h-full-width h-text-center h-add-half-bottom"
+              id="mc-email"
+              placeholder="Email Address"
+              required=""
+            />
+            <input
+              type="submit"
+              name="subscribe"
+              value="Subscribe"
+              class="btn--small h-full-width"
+            />
+            <label for="mc-email" class="subscribe-message"></label>
+          </form>
+        </div>
+        <!-- end modal inner -->
+      </div>
+      <!-- end modal -->
+
+      <ul class="intro-social">
+        <li>
+          <a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <!-- end intro social -->
+
+      <div class="intro-scroll">
+        <a href="#info" class="scroll-link smoothscroll"> Scroll For More </a>
+      </div>
+      <!-- end intro scroll -->
+    </section>
+    <!-- end s-intro -->
+
+    <!-- info
+    ================================================== -->
+    <section id="info" class="s-info">
+      <div class="vert-line"></div>
+
+      <div class="row info-content">
+        <div class="column">
+          <nav class="tab-nav">
+            <ul class="tab-nav__list">
+              <li class="active" data-id="tab-about">
+                <a href="#0">
+                  <span>About</span>
+                </a>
+              </li>
+              <li data-id="tab-services">
+                <a href="#0">
+                  <span>Booking</span>
+                </a>
+              </li>
+              <li data-id="tab-contact">
+                <a href="#0">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end tab-nav -->
+
+          <div class="tab-content">
+            <!-- 01. tab about -->
+            <div id="tab-about" class="tab-content__item">
+              <div class="row tab-content__item-header">
+                <div class="column">
+                  <h1>Hello. We are Loreta's Canyon Farmhouse.</h1>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p class="lead">
+                    Welcome to Loreta's Canyon Farmhouse, your serene getaway in
+                    the heart of nature.
+                  </p>
+
+                  <p>
+                    Nestled amidst breathtaking landscapes, our charming
+                    farmhouse offers a perfect blend of rustic charm and modern
+                    comfort. Whether you're seeking a peaceful retreat or an
+                    adventurous escape, Loreta's Canyon Farmhouse is your ideal
+                    destination. Immerse yourself in the tranquility of nature,
+                    explore scenic trails, and create unforgettable memories
+                    with loved ones. We can't wait to welcome you to our cozy
+                    haven and share the beauty of Loreta's Canyon with you.
+                  </p>
+
+                  <!-- <div class="row">
+                    <div class="column large-6 tab-full">
+                      <h4>More About Us.</h4>
+                      <p>
+                        Sed consequatur quia delectus praesentium. Ut unde velit
+                        maiores aut sint quia molestiae accusamus. Nihil et
+                        quidem qui natus ut et. Autem error architecto. Pariatur
+                        ex repellendus. Occaecati voluptatibus dolorem magni
+                        molestiae dolore voluptas occaecati asperiores nemo. Est
+                        fugiat fuga nesciunt ducimus quaerat et placeat natus.
+                      </p>
+                    </div>
+                    <div class="column large-6 tab-full">
+                      <h4>Need Web Hosting?</h4>
+                      <p>
+                        Need a great reliable web hosting? We highly recommend
+                        <a href="https://www.dreamhost.com/r.cgi?287326"
+                          >DreamHost</a
+                        >. Powerful web and Wordpress hosting. Guaranteed.
+                        Starting at $2.95 per month.
+                      </p>
+                      <a
+                        href="https://www.dreamhost.com/r.cgi?287326"
+                        class="btn btn--stroke h-full-width"
+                        >Get Started Now</a
+                      >
+                    </div>
+                  </div> -->
                 </div>
               </div>
             </div>
-            <br />
-            <div class="card">
-              <div class="card-body">
-                <strong>Using URLs</strong>
-                <p>
-                  Need to configure the webserver to serve the index.html for
-                  SPA Route Paths. This option is better for SEO and is more
-                  user friendly.<br />
-                  <small>Use cases: Websites</small>
-                </p>
-                <nav>
-                  <a href="/">Home</a>
-                  <a href="/about">About</a>
-                  <a href="/contact">Contact</a>
-                </nav>
+            <!-- end 01. tab about -->
+
+            <!-- 02. tab services -->
+            <div id="tab-services" class="tab-content__item">
+              <div class="row tab-content__item-header">
+                <div class="column">
+                  <h1>Booking</h1>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p class="lead">
+                    Book your stay at Loreta's Canyon Farmhouse and experience
+                    the perfect blend of rustic charm and modern comfort.
+                    Nestled in the heart of nature, our cozy farmhouse offers a serene escape from the hustle and bustle of city life. Whether you're seeking a peaceful retreat or an adventurous getaway, our farmhouse is the ideal destination for your next vacation. Immerse yourself in the tranquility of nature, explore scenic trails, and create unforgettable memories with loved ones. We can't wait to welcome you to our cozy haven and share the beauty of Loreta's Canyon with you. Find us on Booking.com and Airbnb to check availability and secure your reservation today!
+                  </p>
+                  <p>Booking Information:</p>
+                  <ul>
+                    <li>Check-in: 3:00 PM</li>
+                    <li>Check-out: 11:00 AM</li>
+                    <li>
+                      Cancellation Policy: Free cancellation up to 7 days before
+                      check-in.
+                    </li>
+                    <li>
+                      Payment Methods: We accept all major credit cards and
+                      cash.
+                    </li>
+                    <li>
+                      Amenities: Enjoy our fully equipped kitchen, cozy living
+                      area, and beautiful outdoor spaces.
+                    </li>
+                    <li>
+                      Pet Policy: We are unable to accommodate pets at this time. 
+                      We apologize for any inconvenience this may cause and appreciate your understanding.
+                    </li>
+                    <li>
+                        Smoking Policy: Smoking is strictly prohibited inside the
+                        farmhouse. We kindly ask guests to smoke in designated
+                        outdoor areas and dispose of cigarette butts properly.
+                    </li>
+                    <!-- <li>
+                      Contact Us: For any questions or special requests, please
+                      contact us at
+                      <a href="mailto:info@loretacanyonfarmhouse.com"
+                        >info@loretacanyonfarmhouse.com</a
+                      >.
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- 
+              <div
+                class="row services-list block-large-1-2 block-medium-1-2 block-tab-full"
+              >
+                <div class="column services-list__item">
+                  <div class="services-list__item-content">
+                    <h4 class="item-title">Brand Identity</h4>
+                    <p>
+                      Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                      consequatur sit vel illum vel et a delectus. Vel sequi
+                      vitae voluptatem perspiciatis eligendi. Voluptatibus optio
+                      natus asperiores est commodi amet quia architecto. Dolores
+                      necessitatibus et.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item">
+                  <div class="services-list__item-content">
+                    <h4 class="item-title">Illustration</h4>
+                    <p>
+                      Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                      consequatur sit vel illum vel et a delectus. Vel sequi
+                      vitae voluptatem perspiciatis eligendi. Voluptatibus optio
+                      natus asperiores est commodi amet quia architecto. Dolores
+                      necessitatibus et.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item">
+                  <div class="services-list__item-content">
+                    <h4 class="item-title">Web Design</h4>
+                    <p>
+                      Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                      consequatur sit vel illum vel et a delectus. Vel sequi
+                      vitae voluptatem perspiciatis eligendi. Voluptatibus optio
+                      natus asperiores est commodi amet quia architecto. Dolores
+                      necessitatibus et.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item">
+                  <div class="services-list__item-content">
+                    <h4 class="item-title">Product Strategy</h4>
+                    <p>
+                      Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                      consequatur sit vel illum vel et a delectus. Vel sequi
+                      vitae voluptatem perspiciatis eligendi. Voluptatibus optio
+                      natus asperiores est commodi amet quia architecto. Dolores
+                      necessitatibus et.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item">
+                  <div class="services-list__item-content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                      Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                      consequatur sit vel illum vel et a delectus. Vel sequi
+                      vitae voluptatem perspiciatis eligendi. Voluptatibus optio
+                      natus asperiores est commodi amet quia architecto. Dolores
+                      necessitatibus et.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item">
+                  <div class="services-list__item-content">
+                    <h4 class="item-title">Mobile Design</h4>
+                    <p>
+                      Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                      consequatur sit vel illum vel et a delectus. Vel sequi
+                      vitae voluptatem perspiciatis eligendi. Voluptatibus optio
+                      natus asperiores est commodi amet quia architecto. Dolores
+                      necessitatibus et.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- end services-list -->
+            </div>
+            <!-- end 02. tab services -->
+
+            <!-- 03. tab contact -->
+            <div id="tab-contact" class="tab-content__item">
+              <div class="row tab-content__item-header">
+                <div class="column">
+                  <h1>Get In Touch With Us.</h1>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p class="lead">
+                    We would love to hear from you! Whether you have a question
+                    about our services, pricing, or anything else, our team is
+                    ready to answer all your questions. Feel free to reach out
+                    to us through any of the contact methods below, and we'll
+                    get back to you as soon as possible.
+                  </p>
+
+                  <div class="row">
+                    <div class="column large-six tab-full">
+                      <h4>Where to Find Us</h4>
+
+                      <p>
+                        <!-- 1600 Amphitheatre Parkway<br />
+                        Mountain View, CA<br />
+                        94043 US -->
+                        Martvili<br />
+                        didi Inchkhuri<br />
+                        1st street<br />
+                        N3<br />
+                        Georgia<br />
+                      </p>
+                    </div>
+
+                    <!-- <div class="column large-six tab-full">
+                      <h4>Follow Us</h4>
+
+                      <ul class="link-list">
+                        <li><a href="#0">Facebook</a></li>
+                        <li><a href="#0">Twitter</a></li>
+                        <li><a href="#0">Instagram</a></li>
+                      </ul>
+                    </div> -->
+                  </div>
+
+                  <!-- <p class="tab-content__item-bottom">
+                    <a href="mailto:#0" class="contact-email">hello@x.com</a>
+                    <span class="contact-number">
+                      <a href="tel:53-543-2345">+53 543 2345</a>
+                      <a href="tel:53-456-522">+53 456 522</a>
+                    </span>
+                  </p> -->
+                </div>
               </div>
             </div>
+            <!-- end 03. tab contact -->
           </div>
-          <div class="col-md-8">
-            <div id="content"></div>
-          </div>
+          <!-- end tab content -->
+
+          <footer>
+            <div class="ss-copyright">
+              <span>© Copyright 2026 Loreta's Canyon Farmhouse</span>
+              <!-- <span>Design by <a href="https://www.x.com/">x</a></span> -->
+            </div>
+
+            <div class="ss-go-top">
+              <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0l8 9h-6v15h-4v-15h-6z"></path>
+                </svg>
+              </a>
+            </div>
+          </footer>
         </div>
+        <!-- end column -->
       </div>
-    </div>
-    <script src="/js/hash-router.js"></script>
-    <!-- OR -->
-    <script src="/js/url-router.js"></script>
+      <!-- end row -->
+    </section>
+    <!-- end s-info -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
+</html>
 </html>
